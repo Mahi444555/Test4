@@ -10,28 +10,29 @@ int main()
     cin>>n;
     int temp = n;
     int count=0;
+    int ori = temp;
 
 while(n>0)
 {
     count++;
     n=n/10;
 }
-  cout<<endl<<"no of digits are: "<<count<<endl;
-   while(n>0)       //153>0     15>0    1>0true 0>0 false
+  
+   while(temp>0)       
    {
-       rem=n%10;    //153%10=3 15%10=5  1%10=1
-      for(i=1;i<=count;i++)     //1<=3 2<=3 3<=3ture then 4<=3 false
+       rem=temp%10;    
+      for(i=1;i<=count;i++)     
       {
-          rm=rm*rem;            //rm = 1*3=3; 3=3*3=9; 9=9*3=27
+          rm=rm*rem;            
       }
-      cout<<"cube are: "<<rm<<endl;
+      
       sum=sum+rm;
-      cout<<sum<<"\t";
-      n=n/10;               //153/10=15 15/10=1  1/10=0.1 false
+      
+      temp=temp/10;               
    }
 
-   cout<<"temporary is: "<<temp<<"sum is"<<sum<<endl;
-   if(temp==sum)
+  
+   if(ori==sum)
    {
        cout<<"yes, it's armstrong number: "<<temp;
    }  
