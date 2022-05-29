@@ -34,11 +34,11 @@ while(n>0)
   
    if(ori==sum)
    {
-       cout<<"yes, it's armstrong number: "<<temp;
+       cout<<"yes, it's armstrong number: "<<sum;
    }  
    else
    {
-       cout<<"No, its not armstrong numer: "<<temp;
+       cout<<"No, its not armstrong numer: "<<sum;
    }
 
 }
